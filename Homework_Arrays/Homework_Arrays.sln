@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.AllocateArray", "AllocateArray\01.AllocateArray.csproj", "{8A7935E9-3A41-440D-99D7-E3E0C71E3E17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareArrays", "CompareArrays\CompareArrays.csproj", "{DD96EAF6-ED36-4734-9700-981643BE918D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CompareArrays", "CompareArrays\02.CompareArrays.csproj", "{DD96EAF6-ED36-4734-9700-981643BE918D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CompareCharArrays", "CompareCharArrays\03.CompareCharArrays.csproj", "{599D2523-78EA-4BC5-85B7-0B43BF023690}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DD96EAF6-ED36-4734-9700-981643BE918D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD96EAF6-ED36-4734-9700-981643BE918D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD96EAF6-ED36-4734-9700-981643BE918D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599D2523-78EA-4BC5-85B7-0B43BF023690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599D2523-78EA-4BC5-85B7-0B43BF023690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599D2523-78EA-4BC5-85B7-0B43BF023690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599D2523-78EA-4BC5-85B7-0B43BF023690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
