@@ -6,7 +6,13 @@ class MaxSequence
 {
     static void Main()
     {
-        int[] arr = { 2, 1, 1, 2, 3, 3, 2, 2, 2, 1 };
+        int n = int.Parse(Console.ReadLine());
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+        
         int maxCount = 1, currentCount = 1, element = arr[0];
         for (int i = 0; i < arr.Length - 1; i++)
         {
@@ -24,11 +30,12 @@ class MaxSequence
                 element = arr[i];
             }
         }
-        for (int i = 0; i < maxCount - 1; i++)
-        {
-            Console.Write(element + ", ");
-        }
-        Console.WriteLine(element);
+        Console.WriteLine(maxCount);
+        //for (int i = 0; i < maxCount - 1; i++)
+        //{
+        //    Console.Write(element + ", ");
+        //}
+        //Console.WriteLine(element);
     }
 
 }

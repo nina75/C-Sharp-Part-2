@@ -32,6 +32,6 @@ class CompareArr
             }
         }
         //Print the result
-        Console.WriteLine(isEquals ? "Equals" : "Not equals");
+        Console.WriteLine(isEquals ? "Equal" : "Not equal");
     }
 }
