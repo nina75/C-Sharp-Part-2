@@ -7,26 +7,26 @@ class MaxKSum
 {
     static void Main()
     {
-        int[] arr = { 1, 5, 2, 7, 8, 9, 4, 6 };
-        //int n = int.Parse(Console.ReadLine());
-        //var arr = new int[n];
-        //for (int i = 0; i < n; i++)
-        //{
-        //    arr[i] = int.Parse(Console.ReadLine());
-        //}
+
+        int n = int.Parse(Console.ReadLine());
         int k = int.Parse(Console.ReadLine());
-        int maxSum = int.MinValue;
-        for (int i = 0; i < arr.Length - 2; i++)
+        var arr = new int[n];
+
+        for (int i = 0; i < n; i++)
         {
-            for (int j = i + 1; j < arr.Length - 1; j++)
-            {
-                for (int l = j + 1; l < arr.Length; l++)
-                {
-                    Console.WriteLine(arr[i] + " " + arr[j] + " " + arr[l]);
-                }
-            }
-            //break;
+            arr[i] = int.Parse(Console.ReadLine());
         }
+
+        int maxSum = 0;
+        Array.Sort(arr);
+        Array.Reverse(arr);
+
+        for (int i = 0; i < k; i++)
+        {
+            maxSum += arr[i];
+        }
+        Console.WriteLine(maxSum);
+        
 
     }
 }

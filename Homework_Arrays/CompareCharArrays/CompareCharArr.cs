@@ -5,31 +5,37 @@ class CompareCharArr
 {
     static void Main()
     {
-        var arr1 = new char[] { 'a', 'b', 'c' };
-        var arr2 = new char[] { 'a', 'b', 'c', 'd' };
-        var arr3 = new char[] { 'a', 'b', 'c', 'd' };
-        Console.WriteLine(CompareCharArrays(arr1, arr2));
-        Console.WriteLine(CompareCharArrays(arr2, arr3));
-    }
+        string first = Console.ReadLine();
+        string second = Console.ReadLine();
+       // char result = '<';
+        if (first == second)
+        {
+            Console.WriteLine("=");
+            return;
+        }
 
-    static bool CompareCharArrays(char[] arr1, char[] arr2)
-    {
-        bool isEquals = true;
-        if (arr1.Length != arr2.Length)
+        int minLen = Math.Min(first.Length, second.Length);
+        for (int i = 0; i < minLen; i++)
         {
-            isEquals = false;
-        } 
-        else
-        {
-            for (int i = 0; i < arr1.Length; i++)
+            if (first[i] < second[i])
             {
-                if (arr1[i] != arr2[i])
-                {
-                    isEquals = false;
-                }
+                Console.WriteLine('<');
+                return;
+            }
+            else if (first[i] > second[i])
+            {
+                Console.WriteLine('>');
+                return;
             }
         }
 
-        return isEquals;
+        if (first.Length < second.Length)
+        {
+            Console.WriteLine("<");
+        }
+        else
+        {
+            Console.WriteLine(">");
+        }
     }
 }
